@@ -1,7 +1,4 @@
-const os = require('os')
+const fs = require('fs');
 
-console.log('platform', os.platform())
-console.log('release', os.release())
-console.log('free memory', os.freemem())
-console.log('total memory', os.totalmem())
-
+fs.writeFile('./texto.txt', 'Primera línea de código', error => error ? error : console.log('Archivo creado'))
+fs. readFile('./texto.txt', (err, data)=> err ? console.log('Problema', err.toString()) : console.log('Here is the result:', data.toString()))
