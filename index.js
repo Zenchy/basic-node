@@ -1,21 +1,9 @@
-function add(a, b){
-  return a+b
-}
+const math = require('./math.js')
 
-function substract(a, b){
-  return a-b
-}
+console.log('this is math', math)
 
-function multiply(a, b){
-  return a*b
-}
-
-function divide(a, b){
-  return b == 0 ? "Not possible to solve, denominator must be different to 0" : a/b
-}
-
-console.log(add(1,2))
-console.log(divide (1,0))
-console.log(divide (1,5))
-console.log(multiply (2,5))
-console.log(substract (3,5))
+console.log(math.add (1,2))
+console.log(math.divide (1,0))
+console.log(math.divide (1,5))
+console.log(math.multiply (2,5))
+console.log(math.substract (3,5))
