@@ -1,4 +1,14 @@
-const fs = require('fs');
+const http = require('http');
 
-fs.writeFile('./texto.txt', 'Primera línea de código', error => error ? error : console.log('Archivo creado'))
-fs. readFile('./texto.txt', (err, data)=> err ? console.log('Problema', err.toString()) : console.log('Here is the result:', data.toString()))
+const colors = require('colors')
+
+const handleServer = (req, res) => {
+  res.writeHead(200, {'Content-type': 'text/html'})
+  res.write('<h1>Hello World from Nodjs!!!</h1>')
+  res.end()
+}
+
+const server = http.createServer(handleServer)
+
+
+server.listen(3000, () => console.log('Servidor en puerto 3000'.cyan))

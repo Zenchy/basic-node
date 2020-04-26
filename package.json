@@ -1,0 +1,29 @@
+{
+  "name": "basic-node",
+  "version": "0.0.1",
+  "description": "This is an initial prject to check basic node functionality",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zenchy/basic-node.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "basics"
+  ],
+  "author": "Zenchy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zenchy/basic-node/issues"
+  },
+  "homepage": "https://github.com/Zenchy/basic-node#readme"
+}
